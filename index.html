@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Leonardo Prado — Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#hero" class="logo">Leonardo Nogueira</a>
+      </div>
+      <nav class="nav" id="nav">
+        <a href="#hero" class="nav-link">Início</a>
+        <a href="#about" class="nav-link">Sobre</a>
+        <a href="#skills" class="nav-link">Habilidades</a>
+        <a href="#projects" class="nav-link">Projetos</a>
+        <a href="#contact" class="nav-link">Contato</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">🌓</button>
+      </nav>
+      <button class="nav-burger" id="burger" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="hero" class="hero section">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 class="reveal">
+            Olá, eu sou <span class="name">Leo Nogueira</span>
+          </h1>
+          <p class="typing" data-phrases='["Estudante de TI", "Foco em Back-end", "Apaixonado por resolver problemas"]'></p>
+          <p class="lead reveal">Desenvolvo soluções com foco em lógica, estrutura de dados e integração entre sistemas. Aqui estão meus projetos e habilidades.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#projects">Ver Projetos</a>
+            <a class="btn" href="#contact">Contato</a>
+          </div>
+        </div>
+
+        <div class="hero-photo reveal">
+          <!-- foto de perfil: substitua src pelo caminho da sua foto -->
+          <img alt="Foto de Leonardo Prado" src="leopicture.jpg" class="profile-photo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="about" class="section about">
+      <div class="container section-inner">
+        <h2 class="section-title reveal">Sobre mim</h2>
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <img alt="Foto" src="leopicture2.jpg" class="about-photo" />
+          </div>
+          <div class="about-text reveal">
+            <p><strong>Leonardo Prado</strong> — Estudante de TI com foco em desenvolvimento back-end. Tenho interesse por sistemas bem arquitetados, bancos de dados e automação. Busco oportunidades para aplicar lógica, aprender boas práticas e trabalhar em projetos reais.</p>
+            <p>Objetivos: construir aplicações escaláveis, dominar padrões de projeto e preparar um portfólio profissional para o mercado.</p>
+            <a class="btn" href="#skills">Ver Habilidades</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="skills" class="section skills">
+      <div class="container section-inner">
+        <h2 class="section-title reveal">Habilidades</h2>
+
+        <div class="skills-grid">
+          <div class="hard-skills reveal">
+            <h3>Hard Skills</h3>
+            <ul class="skill-list">
+              <li>
+                <span class="skill-name">Java Script</span>
+                <div class="skill-bar"><div class="skill-level" style="--lvl:80%"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">C#</span>
+                <div class="skill-bar"><div class="skill-level" style="--lvl:85%"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">MySQL</span>
+                <div class="skill-bar"><div class="skill-level" style="--lvl:90%"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">HTML</span>
+                <div class="skill-bar"><div class="skill-level" style="--lvl:75%"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">CSS</span>
+                <div class="skill-bar"><div class="skill-level" style="--lvl:70%"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="soft-skills reveal">
+            <h3>Soft Skills</h3>
+            <ul class="soft-list">
+              <li><strong>Comunicação</strong> — Explico ideias de forma clara.</li>
+              <li><strong>Trabalho em equipe</strong> — Colaboro bem com colegas.</li>
+              <li><strong>Proatividade</strong> — Busco soluções e aprendizado contínuo.</li>
+              <li><strong>Resolução de problemas</strong> — Gosto de desafios lógicos.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projects" class="section projects">
+      <div class="container section-inner">
+        <h2 class="section-title reveal">Projetos</h2>
+
+        <div class="projects-grid">
+          <!-- Projeto 1 -->
+          <article class="project-card reveal">
+            <div class="project-thumb">
+              <img src="projeto1.png" alt="Projeto 1" />
+            </div>
+            <div class="project-body">
+              <h3>Projeto: Sistema de Cadastro</h3>
+              <p>Aplicação simples de cadastro com validação e persistência simulada para demonstrar lógica de formulários e armazenamento local.</p>
+              <div class="project-actions">
+                <button class="btn small" data-project="1" aria-haspopup="dialog">Detalhes</button>
+                <a class="btn link" href="https://github.com/leonogueiera" target="_blank" rel="noopener">Ver código (GitHub)</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto 2 -->
+          <article class="project-card reveal">
+            <div class="project-thumb">
+              <img src="projeto2.png" alt="Projeto 2" />
+            </div>
+            <div class="project-body">
+              <h3>Projeto: API Simples</h3>
+              <p>Back-end simulado com rotas e consumo via JS. Demonstra integração e entendimento de rotas/HTTP (mock).</p>
+              <div class="project-actions">
+                <button class="btn small" data-project="2" aria-haspopup="dialog">Detalhes</button>
+                <a class="btn link" href="https://github.com/leonogueiera" target="_blank" rel="noopener">Ver código (GitHub)</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto 3 -->
+          <article class="project-card reveal">
+            <div class="project-thumb">
+              <img src="projeto3.jpg" alt="Projeto 3" />
+            </div>
+            <div class="project-body">
+              <h3>Projeto: Dashboard</h3>
+              <p>Dashboard responsivo com visualizações simples, focado em usabilidade e layout.</p>
+              <div class="project-actions">
+                <button class="btn small" data-project="3" aria-haspopup="dialog">Detalhes</button>
+                <a class="btn link" href="https://github.com/leonogueiera" target="_blank" rel="noopener">Ver código (GitHub)</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL DE PROJETO -->
+    <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal-content" role="document">
+        <button class="modal-close" id="modal-close" aria-label="Fechar">×</button>
+        <div id="modal-body">
+          <!-- Conteúdo será inserido via JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTATO -->
+    <section id="contact" class="section contact">
+      <div class="container section-inner">
+        <h2 class="section-title reveal">Contato</h2>
+
+        <div class="contact-grid reveal">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-row">
+              <label for="name">Nome</label>
+              <input id="name" name="name" required />
+            </div>
+
+            <div class="form-row">
+              <label for="phone">Telefone</label>
+              <input id="phone" name="phone" placeholder="(00) 90000-0000" required oninput="maskphone()" />
+            </div>
+
+            <div class="form-row">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" placeholder="seu@exemplo.com" required />
+            </div>
+
+            <div class="form-row">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="form-row">
+              <button type="submit" class="btn primary">Enviar mensagem</button>
+            </div>
+
+            <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+          </form>
+
+          <div class="contact-info">
+            <h3>Meus contatos</h3>
+            <p><strong>Email:</strong> <a href="mailto:leonardo@example.com">leonardo@example.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/leonogueiera" target="_blank" rel="noopener">github.com/leonogueira</a></p>
+            <p><strong>LinkedIn:</strong> <a href="#" target="_blank" rel="noopener">linkedin.com/in/seu-perfil</a></p>
+            <p>Você também pode me enviar uma mensagem usando o formulário ao lado.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Leonardo Nogueira. Todos os direitos reservados.</p>
+      <div class="socials">
+        <a href="https://github.com/leonogueiera" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:leonardo@example.com" aria-label="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
